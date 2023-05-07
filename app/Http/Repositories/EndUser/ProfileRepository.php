@@ -3,13 +3,23 @@
 namespace App\Http\Repositories\EndUser;
 
 use App\Http\Interfaces\EndUser\ProfileInterface;
+use App\Models\Ads;
+use App\Models\Profile;
+use Illuminate\Support\Facades\Auth;
 
 class ProfileRepository implements ProfileInterface
 {
 
     public function index()
     {
-        $profile = auth()->user()->profile;
+        $profile = Profile::where('user_id',auth()->id())->first();
+        //dd($profile);
         return view('EndUser.pages.profile.index' , compact('profile'));
+    }
+
+    public function get_my_ads(){
+        $my_ads = Ads::where('user_id',auth()->id())->first();
+        //dd($my_ads);
+        return view('EndUser.pages.profile.my-ads',compact('my_ads'));
     }
 }

@@ -36,7 +36,7 @@
                     <a href="ad-list-column3.html" class="suggest-card">
                         <img src="{{ asset($department->image) }}" alt="{{$department->name}}">
                         <h6>{{$department->name}}</h6>
-                        <p>({{$department->categories->count()}})Category</p>
+                        <p>({{$department->categories->count()}})ads</p>
                     </a>
                 @endforeach
             </div>
@@ -59,7 +59,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur illum vel sunt libero
                             voluptatum repudiandae veniam maxime tenetur fugiat eaque alias nobis doloremque culpa
                             nam.</p>
-                        <a href="ad-list-column3.html" class="btn btn-inline">
+                        <a href="{{route('endUser.ads.index')}}" class="btn btn-inline">
                             <i class="fas fa-eye"></i>
                             <span>view all featured</span>
                         </a>
@@ -69,7 +69,7 @@
                     <div class="feature-card-slider slider-arrow">
                         <div class="feature-card">
                             <a href="#" class="feature-img">
-                                <img src="images/product/10.jpg" alt="feature">
+                                <img src="{{asset('assetsEndUser/images/product/10.jpg')}}" alt="feature">
                             </a>
                             <div class="cross-inline-badge feature-badge">
                                 <span>featured</span>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="feature-card">
                             <a href="#" class="feature-img">
-                                <img src="images/product/01.jpg" alt="feature">
+                                <img src="{{asset('assetsEndUser/images/product/01.jpg')}}" alt="feature">
                             </a>
                             <div class="cross-inline-badge feature-badge">
                                 <span>featured</span>
@@ -119,7 +119,7 @@
                         </div>
                         <div class="feature-card">
                             <a href="#" class="feature-img">
-                                <img src="images/product/08.jpg" alt="feature">
+                                <img src="{{asset('assetsEndUser/images/product/08.jpg')}}" alt="feature">
                             </a>
                             <div class="cross-inline-badge feature-badge">
                                 <span>featured</span>
@@ -144,7 +144,7 @@
                         </div>
                         <div class="feature-card">
                             <a href="#" class="feature-img">
-                                <img src="images/product/06.jpg" alt="feature">
+                                <img src="{{asset('assetsEndUser/images/product/06.jpg')}}" alt="feature">
                             </a>
                             <div class="cross-inline-badge feature-badge">
                                 <span>featured</span>
@@ -169,10 +169,10 @@
                         </div>
                     </div>
                     <div class="feature-thumb-slider">
-                        <div class="feature-thumb"><img src="images/product/10.jpg" alt="feature"></div>
-                        <div class="feature-thumb"><img src="images/product/01.jpg" alt="feature"></div>
-                        <div class="feature-thumb"><img src="images/product/08.jpg" alt="feature"></div>
-                        <div class="feature-thumb"><img src="images/product/06.jpg" alt="feature"></div>
+                        <div class="feature-thumb"><img src="{{asset('assetsEndUser/images/product/10.jpg')}}" alt="feature"></div>
+                        <div class="feature-thumb"><img src="{{asset('assetsEndUser/images/product/01.jpg')}}" alt="feature"></div>
+                        <div class="feature-thumb"><img src="{{asset('assetsEndUser/images/product/08.jpg')}}" alt="feature"></div>
+                        <div class="feature-thumb"><img src="{{asset('assetsEndUser/images/product/06.jpg')}}" alt="feature"></div>
                     </div>
                 </div>
             </div>
@@ -200,206 +200,206 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="recomend-slider slider-arrow">
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-img">
-                                    <img src="images/product/01.jpg" alt="product">
-                                </div>
-                                <div class="cross-vertical-badge product-badge">
-                                    <i class="fas fa-clipboard-check"></i>
-                                    <span>recommend</span>
-                                </div>
-                                <div class="product-type">
-                                    <span class="flat-badge booking">booking</span>
-                                </div>
-                                <ul class="product-action">
-                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>
-                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>
-                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <ol class="breadcrumb product-category">
-                                    <li><i class="fas fa-tags"></i></li>
-                                    <li class="breadcrumb-item"><a href="#">Luxury</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Duplex House</li>
-                                </ol>
-                                <h5 class="product-title">
-                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>
-                                </h5>
-                                <div class="product-meta">
-                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>
-                                    <span><i class="fas fa-clock"></i>30 min ago</span>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-price">$1500<span>/Per Day</span></h5>
-                                    <div class="product-btn">
-                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>
-                                        <button type="button" title="Wishlist" class="far fa-heart"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-img">
-                                    <img src="images/product/03.jpg" alt="product">
-                                </div>
-                                <div class="cross-vertical-badge product-badge">
-                                    <i class="fas fa-clipboard-check"></i>
-                                    <span>recommend</span>
-                                </div>
-                                <div class="product-type">
-                                    <span class="flat-badge sale">sale</span>
-                                </div>
-                                <ul class="product-action">
-                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>
-                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>
-                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <ol class="breadcrumb product-category">
-                                    <li><i class="fas fa-tags"></i></li>
-                                    <li class="breadcrumb-item"><a href="#">stationary</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">books</li>
-                                </ol>
-                                <h5 class="product-title">
-                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>
-                                </h5>
-                                <div class="product-meta">
-                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>
-                                    <span><i class="fas fa-clock"></i>30 min ago</span>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-price">$470<span>/fixed</span></h5>
-                                    <div class="product-btn">
-                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>
-                                        <button type="button" title="Wishlist" class="far fa-heart"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-img">
-                                    <img src="images/product/10.jpg" alt="product">
-                                </div>
-                                <div class="cross-vertical-badge product-badge">
-                                    <i class="fas fa-clipboard-check"></i>
-                                    <span>recommend</span>
-                                </div>
-                                <div class="product-type">
-                                    <span class="flat-badge rent">rent</span>
-                                </div>
-                                <ul class="product-action">
-                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>
-                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>
-                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <ol class="breadcrumb product-category">
-                                    <li><i class="fas fa-tags"></i></li>
-                                    <li class="breadcrumb-item"><a href="#">automobile</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">private car</li>
-                                </ol>
-                                <h5 class="product-title">
-                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>
-                                </h5>
-                                <div class="product-meta">
-                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>
-                                    <span><i class="fas fa-clock"></i>30 min ago</span>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-price">$3300<span>/per month</span></h5>
-                                    <div class="product-btn">
-                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>
-                                        <button type="button" title="Wishlist" class="far fa-heart"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-img">
-                                    <img src="images/product/09.jpg" alt="product">
-                                </div>
-                                <div class="cross-vertical-badge product-badge">
-                                    <i class="fas fa-clipboard-check"></i>
-                                    <span>recommend</span>
-                                </div>
-                                <div class="product-type">
-                                    <span class="flat-badge sale">sale</span>
-                                </div>
-                                <ul class="product-action">
-                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>
-                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>
-                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <ol class="breadcrumb product-category">
-                                    <li><i class="fas fa-tags"></i></li>
-                                    <li class="breadcrumb-item"><a href="#">animals</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">cat</li>
-                                </ol>
-                                <h5 class="product-title">
-                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>
-                                </h5>
-                                <div class="product-meta">
-                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>
-                                    <span><i class="fas fa-clock"></i>30 min ago</span>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-price">$900<span>/Negotiable</span></h5>
-                                    <div class="product-btn">
-                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>
-                                        <button type="button" title="Wishlist" class="far fa-heart"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-img">
-                                    <img src="images/product/02.jpg" alt="product">
-                                </div>
-                                <div class="cross-vertical-badge product-badge">
-                                    <i class="fas fa-clipboard-check"></i>
-                                    <span>recommend</span>
-                                </div>
-                                <div class="product-type">
-                                    <span class="flat-badge sale">sale</span>
-                                </div>
-                                <ul class="product-action">
-                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>
-                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>
-                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <ol class="breadcrumb product-category">
-                                    <li><i class="fas fa-tags"></i></li>
-                                    <li class="breadcrumb-item"><a href="#">fashion</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">shoes</li>
-                                </ol>
-                                <h5 class="product-title">
-                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>
-                                </h5>
-                                <div class="product-meta">
-                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>
-                                    <span><i class="fas fa-clock"></i>30 min ago</span>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-price">$384<span>/fixed</span></h5>
-                                    <div class="product-btn">
-                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>
-                                        <button type="button" title="Wishlist" class="far fa-heart"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="product-card">--}}
+{{--                            <div class="product-media">--}}
+{{--                                <div class="product-img">--}}
+{{--                                    <img src="{{asset('assetsEndUser/images/product/01.jpg')}}" alt="product">--}}
+{{--                                </div>--}}
+{{--                                <div class="cross-vertical-badge product-badge">--}}
+{{--                                    <i class="fas fa-clipboard-check"></i>--}}
+{{--                                    <span>recommend</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-type">--}}
+{{--                                    <span class="flat-badge booking">booking</span>--}}
+{{--                                </div>--}}
+{{--                                <ul class="product-action">--}}
+{{--                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>--}}
+{{--                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>--}}
+{{--                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-content">--}}
+{{--                                <ol class="breadcrumb product-category">--}}
+{{--                                    <li><i class="fas fa-tags"></i></li>--}}
+{{--                                    <li class="breadcrumb-item"><a href="#">Luxury</a></li>--}}
+{{--                                    <li class="breadcrumb-item active" aria-current="page">Duplex House</li>--}}
+{{--                                </ol>--}}
+{{--                                <h5 class="product-title">--}}
+{{--                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>--}}
+{{--                                </h5>--}}
+{{--                                <div class="product-meta">--}}
+{{--                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>--}}
+{{--                                    <span><i class="fas fa-clock"></i>30 min ago</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <h5 class="product-price">$1500<span>/Per Day</span></h5>--}}
+{{--                                    <div class="product-btn">--}}
+{{--                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>--}}
+{{--                                        <button type="button" title="Wishlist" class="far fa-heart"></button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="product-card">--}}
+{{--                            <div class="product-media">--}}
+{{--                                <div class="product-img">--}}
+{{--                                    <img src="{{asset('assetsEndUser/images/product/03.jpg')}}" alt="product">--}}
+{{--                                </div>--}}
+{{--                                <div class="cross-vertical-badge product-badge">--}}
+{{--                                    <i class="fas fa-clipboard-check"></i>--}}
+{{--                                    <span>recommend</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-type">--}}
+{{--                                    <span class="flat-badge sale">sale</span>--}}
+{{--                                </div>--}}
+{{--                                <ul class="product-action">--}}
+{{--                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>--}}
+{{--                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>--}}
+{{--                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-content">--}}
+{{--                                <ol class="breadcrumb product-category">--}}
+{{--                                    <li><i class="fas fa-tags"></i></li>--}}
+{{--                                    <li class="breadcrumb-item"><a href="#">stationary</a></li>--}}
+{{--                                    <li class="breadcrumb-item active" aria-current="page">books</li>--}}
+{{--                                </ol>--}}
+{{--                                <h5 class="product-title">--}}
+{{--                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>--}}
+{{--                                </h5>--}}
+{{--                                <div class="product-meta">--}}
+{{--                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>--}}
+{{--                                    <span><i class="fas fa-clock"></i>30 min ago</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <h5 class="product-price">$470<span>/fixed</span></h5>--}}
+{{--                                    <div class="product-btn">--}}
+{{--                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>--}}
+{{--                                        <button type="button" title="Wishlist" class="far fa-heart"></button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="product-card">--}}
+{{--                            <div class="product-media">--}}
+{{--                                <div class="product-img">--}}
+{{--                                    <img src="{{asset('assetsEndUser/images/product/10.jpg')}}" alt="product">--}}
+{{--                                </div>--}}
+{{--                                <div class="cross-vertical-badge product-badge">--}}
+{{--                                    <i class="fas fa-clipboard-check"></i>--}}
+{{--                                    <span>recommend</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-type">--}}
+{{--                                    <span class="flat-badge rent">rent</span>--}}
+{{--                                </div>--}}
+{{--                                <ul class="product-action">--}}
+{{--                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>--}}
+{{--                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>--}}
+{{--                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-content">--}}
+{{--                                <ol class="breadcrumb product-category">--}}
+{{--                                    <li><i class="fas fa-tags"></i></li>--}}
+{{--                                    <li class="breadcrumb-item"><a href="#">automobile</a></li>--}}
+{{--                                    <li class="breadcrumb-item active" aria-current="page">private car</li>--}}
+{{--                                </ol>--}}
+{{--                                <h5 class="product-title">--}}
+{{--                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>--}}
+{{--                                </h5>--}}
+{{--                                <div class="product-meta">--}}
+{{--                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>--}}
+{{--                                    <span><i class="fas fa-clock"></i>30 min ago</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <h5 class="product-price">$3300<span>/per month</span></h5>--}}
+{{--                                    <div class="product-btn">--}}
+{{--                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>--}}
+{{--                                        <button type="button" title="Wishlist" class="far fa-heart"></button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="product-card">--}}
+{{--                            <div class="product-media">--}}
+{{--                                <div class="product-img">--}}
+{{--                                    <img src="{{asset('assetsEndUser/images/product/09.jpg')}}" alt="product">--}}
+{{--                                </div>--}}
+{{--                                <div class="cross-vertical-badge product-badge">--}}
+{{--                                    <i class="fas fa-clipboard-check"></i>--}}
+{{--                                    <span>recommend</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-type">--}}
+{{--                                    <span class="flat-badge sale">sale</span>--}}
+{{--                                </div>--}}
+{{--                                <ul class="product-action">--}}
+{{--                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>--}}
+{{--                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>--}}
+{{--                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-content">--}}
+{{--                                <ol class="breadcrumb product-category">--}}
+{{--                                    <li><i class="fas fa-tags"></i></li>--}}
+{{--                                    <li class="breadcrumb-item"><a href="#">animals</a></li>--}}
+{{--                                    <li class="breadcrumb-item active" aria-current="page">cat</li>--}}
+{{--                                </ol>--}}
+{{--                                <h5 class="product-title">--}}
+{{--                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>--}}
+{{--                                </h5>--}}
+{{--                                <div class="product-meta">--}}
+{{--                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>--}}
+{{--                                    <span><i class="fas fa-clock"></i>30 min ago</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <h5 class="product-price">$900<span>/Negotiable</span></h5>--}}
+{{--                                    <div class="product-btn">--}}
+{{--                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>--}}
+{{--                                        <button type="button" title="Wishlist" class="far fa-heart"></button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="product-card">--}}
+{{--                            <div class="product-media">--}}
+{{--                                <div class="product-img">--}}
+{{--                                    <img src="{{asset('assetsEndUser/images/product/02.jpg')}}" alt="product">--}}
+{{--                                </div>--}}
+{{--                                <div class="cross-vertical-badge product-badge">--}}
+{{--                                    <i class="fas fa-clipboard-check"></i>--}}
+{{--                                    <span>recommend</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-type">--}}
+{{--                                    <span class="flat-badge sale">sale</span>--}}
+{{--                                </div>--}}
+{{--                                <ul class="product-action">--}}
+{{--                                    <li class="view"><i class="fas fa-eye"></i><span>264</span></li>--}}
+{{--                                    <li class="click"><i class="fas fa-mouse"></i><span>134</span></li>--}}
+{{--                                    <li class="rating"><i class="fas fa-star"></i><span>4.5/7</span></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-content">--}}
+{{--                                <ol class="breadcrumb product-category">--}}
+{{--                                    <li><i class="fas fa-tags"></i></li>--}}
+{{--                                    <li class="breadcrumb-item"><a href="#">fashion</a></li>--}}
+{{--                                    <li class="breadcrumb-item active" aria-current="page">shoes</li>--}}
+{{--                                </ol>--}}
+{{--                                <h5 class="product-title">--}}
+{{--                                    <a href="ad-details-left.html">Lorem ipsum dolor sit amet consect adipisicing elit</a>--}}
+{{--                                </h5>--}}
+{{--                                <div class="product-meta">--}}
+{{--                                    <span><i class="fas fa-map-marker-alt"></i>Uttara, Dhaka</span>--}}
+{{--                                    <span><i class="fas fa-clock"></i>30 min ago</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <h5 class="product-price">$384<span>/fixed</span></h5>--}}
+{{--                                    <div class="product-btn">--}}
+{{--                                        <a href="compare.html" title="Compare" class="fas fa-compress"></a>--}}
+{{--                                        <button type="button" title="Wishlist" class="far fa-heart"></button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         @forelse($our_Recommend_ads as $our_Recommend_ad)
                             <div class="product-card">
                                 <div class="product-media">
@@ -582,7 +582,7 @@
                             <div class="product-card">
                                 <div class="product-media">
                                     <div class="product-img">
-                                        <img src="images/product/07.jpg" alt="product">
+                                        <img src="{{ asset($ad->image) }}" alt="product">
                                     </div>
                                     <div class="cross-vertical-badge product-badge">
                                         <i class="fas fa-fire"></i>
@@ -631,7 +631,7 @@
                             <div class="product-card">
                                 <div class="product-media">
                                     <div class="product-img">
-                                        <img src="images/product/08.jpg" alt="product">
+                                        <img src="{{ asset($ad->image) }}" alt="product">
                                     </div>
                                     <div class="cross-vertical-badge product-badge">
                                         <i class="fas fa-fire"></i>
@@ -679,7 +679,7 @@
                             <div class="product-card">
                                 <div class="product-media">
                                     <div class="product-img">
-                                        <img src="images/product/08.jpg" alt="product">
+                                        <img src="{{ asset($ad->image) }}" alt="product">
                                     </div>
                                     <div class="cross-vertical-badge product-badge">
                                         <i class="fas fa-fire"></i>
@@ -724,7 +724,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="center-20">
-                        <a href="ad-list-column3.html" class="btn btn-inline">
+                        <a href="{{route('endUser.ads.index')}}" class="btn btn-inline">
                             <i class="fas fa-eye"></i>
                             <span>view all ads</span>
                         </a>
@@ -808,7 +808,7 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="category-card">
                             <div class="category-head">
-                                <img src="images/category/electronics.jpg" alt="category">
+                                <img src="{{asset($department->image)}}" alt="category">
                                 <a href="#" class="category-content">
                                     <h4>{{$department->name}}</h4>
                                     <p>({{$department->ads_count}}) ads</p>
@@ -1023,14 +1023,14 @@
                     <div class="blog-slider slider-arrow">
                         <div class="blog-card">
                             <div class="blog-img">
-                                <img src="images/blog/01.jpg" alt="blog">
+                                <img src="{{asset('assetsEndUser/images/blog/01.jpg')}}" alt="blog">
                                 <div class="blog-overlay">
                                     <span class="marketing">Marketing</span>
                                 </div>
                             </div>
                             <div class="blog-content">
                                 <a href="#" class="blog-avatar">
-                                    <img src="images/avatar/01.jpg" alt="avatar">
+                                    <img src="{{asset('assetsEndUser/images/avatar/01.jpg')}}" alt="avatar">
                                 </a>
                                 <ul class="blog-meta">
                                     <li>
@@ -1056,14 +1056,14 @@
                         </div>
                         <div class="blog-card">
                             <div class="blog-img">
-                                <img src="images/blog/02.jpg" alt="blog">
+                                <img src="{{asset('assetsEndUser/images/blog/02.jpg')}}" alt="blog">
                                 <div class="blog-overlay">
                                     <span class="advertise">advertise</span>
                                 </div>
                             </div>
                             <div class="blog-content">
                                 <a href="#" class="blog-avatar">
-                                    <img src="images/avatar/02.jpg" alt="avatar">
+                                    <img src="{{asset('assetsEndUser/images/avatar/02.jpg')}}" alt="avatar">
                                 </a>
                                 <ul class="blog-meta">
                                     <li>
@@ -1089,14 +1089,14 @@
                         </div>
                         <div class="blog-card">
                             <div class="blog-img">
-                                <img src="images/blog/03.jpg" alt="blog">
+                                <img src="{{asset('assetsEndUser/images/blog/03.jpg')}}" alt="blog">
                                 <div class="blog-overlay">
                                     <span class="safety">safety</span>
                                 </div>
                             </div>
                             <div class="blog-content">
                                 <a href="#" class="blog-avatar">
-                                    <img src="images/avatar/03.jpg" alt="avatar">
+                                    <img src="{{asset('assetsEndUser/images/avatar/03.jpg')}}" alt="avatar">
                                 </a>
                                 <ul class="blog-meta">
                                     <li>
@@ -1122,14 +1122,14 @@
                         </div>
                         <div class="blog-card">
                             <div class="blog-img">
-                                <img src="images/blog/04.jpg" alt="blog">
+                                <img src="{{asset('assetsEndUser/images/blog/04.jpg')}}" alt="blog">
                                 <div class="blog-overlay">
                                     <span class="security">security</span>
                                 </div>
                             </div>
                             <div class="blog-content">
                                 <a href="#" class="blog-avatar">
-                                    <img src="images/avatar/04.jpg" alt="avatar">
+                                    <img src="{{asset('assetsEndUser/images/avatar/04.jpg')}}" alt="avatar">
                                 </a>
                                 <ul class="blog-meta">
                                     <li>

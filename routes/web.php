@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EndUser\AdsController;
 use App\Http\Controllers\EndUser\AuthController;
+use App\Http\Controllers\EndUser\blogController;
 use App\Http\Controllers\EndUser\HomeController;
 use App\Http\Controllers\EndUser\ProfileController;
 use App\Http\Controllers\EndUser\ProfileSettingController;
@@ -51,6 +52,8 @@ Route::group(
             Route::get('/', 'index')->name('index');
             Route::put('update', 'update')->name('update');
             Route::get('/edit', 'edit')->name('edit');
+
+            Route::get('/myads', 'get_my_ads')->name('my_ads');
         });
 
         //profile setting
@@ -73,12 +76,12 @@ Route::group(
         });
 
         Route::group(['prefix'=>'blog','as'=>'blog.','middleware'=>'auth'],function (){
-            Route::get('/',[\App\Http\Controllers\EndUser\blogController::class,"index"])->name('index');
-            Route::get('create',[\App\Http\Controllers\EndUser\blogController::class,"create"])->name('create');
-            Route::post('store',[\App\Http\Controllers\EndUser\blogController::class,"store"])->name('store');
-            Route::get('updateForm/{blog}',[\App\Http\Controllers\EndUser\blogController::class,"updateForm"])->name('edit');
-            Route::put('edit/{blog}',[\App\Http\Controllers\EndUser\blogController::class,"update"])->name('update');
-            Route::post('search',[\App\Http\Controllers\EndUser\blogController::class,"search"]);
+            Route::get('/',[blogController::class,"index"])->name('index');
+            Route::get('create',[blogController::class,"create"])->name('create');
+            Route::post('store',[blogController::class,"store"])->name('store');
+            Route::get('updateForm/{blog}',[blogController::class,"updateForm"])->name('edit');
+            Route::put('edit/{blog}',[blogController::class,"update"])->name('update');
+            Route::post('search',[blogController::class,"search"]);
         });
     });
 

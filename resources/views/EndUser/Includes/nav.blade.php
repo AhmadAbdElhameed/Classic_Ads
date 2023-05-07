@@ -9,19 +9,19 @@
                     <img src="{{asset('assetsEndUser/images/logo.png')}}" alt="logo">
                 </a>
                 <a href="user-form.html" class="header-widget header-user">
-                    <img src="images/user.png" alt="user">
+                    <img src="{{asset('assetsEndUser/images/user.png')}}" alt="user">
                     <a href="{{route('login')}}">
+                        @if(!Auth::check())
                     <span>
-                    @if(!Auth::check())
                             join me
-                        @endif
                     </span>
+                        @endif
                     </a>
                 </a>
 
                 @if(Auth::check())
                     <a class="ml-2" href="{{ route('endUser.logout') }}">
-                        <span>logo out</span>
+                        <span>Logout</span>
                     </a>
                 @endif
 

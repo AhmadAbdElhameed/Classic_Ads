@@ -19,4 +19,7 @@ class ProfileController extends Controller
     {
         return $this->profileInterface->index();
     }
+    public function get_my_ads(){
+        return $this->profileInterface->get_my_ads();
+    }
 }
