@@ -1,7 +1,7 @@
 <aside class="sidebar-part">
     <div class="sidebar-body">
         <div class="sidebar-header">
-            <a href="index.html" class="sidebar-logo"><img src="images/logo.png" alt="logo"></a>
+            <a href="{{route('endUser.profile.index')}}" class="sidebar-logo"><img src="{{asset($profile->image)}}" alt="logo"></a>
             <button class="sidebar-cross"><i class="fas fa-times"></i></button>
         </div>
         <div class="sidebar-content">

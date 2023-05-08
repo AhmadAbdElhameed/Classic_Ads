@@ -18,7 +18,7 @@ class ProfileRepository implements ProfileInterface
     }
 
     public function get_my_ads(){
-        $my_ads = Ads::where('user_id',auth()->id())->first();
+        $my_ads = Ads::where('user_id',auth()->id())->with('category')->get(['id', 'name', 'city', 'image', 'slug', 'price','category_id' ,'description', 'type', 'status', 'created_at']);
         //dd($my_ads);
         return view('EndUser.pages.profile.my-ads',compact('my_ads'));
     }

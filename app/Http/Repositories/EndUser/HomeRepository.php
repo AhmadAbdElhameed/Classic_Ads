@@ -5,9 +5,11 @@ namespace App\Http\Repositories\EndUser;
 use App\Http\Interfaces\EndUser\HomeInterface;
 use App\Http\Traits\AllAdsTrait;
 use App\Http\Traits\ShowDepartmentTrait;
+use App\Http\Traits\EndUser\ProfileTrait;
 use App\Models\Ads;
 use App\Models\Category;
 use App\Models\Department;
+use App\Models\Profile;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -15,16 +17,19 @@ use Illuminate\Foundation\Application;
 class HomeRepository implements HomeInterface
 {
 
-    use AllAdsTrait , ShowDepartmentTrait;
+    use AllAdsTrait , ShowDepartmentTrait , ProfileTrait;
 
     private $department;
     private $ad;
     private $category;
-    public function __construct(Department $department, Ads $ad, Category $category)
+    private $profile;
+
+    public function __construct(Department $department, Ads $ad, Category $category , Profile $profile)
     {
         $this->department = $department;
         $this->ad = $ad;
         $this->category = $category;
+        $this->profile = $profile;
     }
 
     public function index():View|Application|Factory|\Illuminate\Contracts\Foundation\Application
@@ -34,7 +39,9 @@ class HomeRepository implements HomeInterface
         $departments = $this->topCategoriesByAds();
         $our_city= $this->getTopCity();
         $popularTrendingAds = $this->getPopularTrendingAds(8);
-        return view('index', compact('our_Recommend_ads', 'ads', 'departments','popularTrendingAds','our_city'));
+        $profile = $this->getCurrentProfile();
+//        dd($profile);
+        return view('index', compact('our_Recommend_ads', 'ads', 'departments','popularTrendingAds','our_city', 'profile'));
 
     }
 
